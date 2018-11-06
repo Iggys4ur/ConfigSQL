@@ -1,0 +1,37 @@
+#To create multiple databases, simply copy & paste every subkey of "databases:"
+#To create multiple tables, simply copy & paste every subkey of "<databaseName>.tables:"
+#To create multiple columns, simply copy & paste every subkey of "<databaseName>.<tableName>.columns:"
+
+#===================================================================
+
+#all databases you wish to create must be listed here, spelled exactly as they are below
+databaseNames: ['exampleDatabase']
+
+#don't mess with this key
+databases:
+  #spelled exactly as appears in "databaseNames:"
+  exampleDatabase:
+    #all tables you wish to create in this database must be listed here, spelled exactly as they are below
+    tableNames: ['table1']
+    tables:
+      #spelled exactly as appears in "<databaseName>.tableNames"
+      table1:
+        #Specify creation statement of the table
+        creationStatement: 'CREATE TABLE IF NOT EXISTS'
+        #all columns you wish to create must be listed here, spelled exactly as they are below
+        columnNames: ['column1','column2','column3']
+        #don't mess with this key
+        columns:
+          #spelled exactly as appears in "<databaseName>.<tableName>.columnNames:"
+          column1:
+            #Specify creation statement of the column
+            creationStatement: 'INTEGER NOT NULL PRIMARY KEY'
+          #spelled exactly as appears in "<databaseName>.<tableName>.columnNames:"
+          column2:
+            #Specify creation statement of the column
+            creationStatement: 'TEXT'
+          #spelled exactly as appears in "<databaseName>.<tableName>.columnNames:"
+          column3:
+            #Specify creation statement of the column
+            creationStatement: 'BLOB'
+

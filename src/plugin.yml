@@ -1,0 +1,10 @@
+main: site.modicum.configsql.CSQL
+name: ConfigSQL
+version: '1.3'
+description: SQLLite DB Creation from Config
+load: POSTWORLD
+author: Iggysaur
+website: modicum.site
+prefix: CSQL
+depend:
+- SQLiteLib

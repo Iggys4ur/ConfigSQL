@@ -1,0 +1,2 @@
+#change me to true once you've changed the databaseConstructor.yml to your liking
+initializeDatabases: false
