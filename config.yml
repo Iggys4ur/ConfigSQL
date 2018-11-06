@@ -1,8 +1,0 @@
-databases:
-  <databaseName>:
-    tables:
-      - <tableName>:
-          creationStatement:
-          columnNames:
-            - <columnName>:
-                creationStatement:
