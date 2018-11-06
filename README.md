@@ -1,2 +1,3 @@
 # ConfigSQL
-SQLiteLib spigot plugin integration to create SQLite databases from YAML
+SQLiteLib spigot plugin integration to create SQLite databases from YAML via SQLiteLib
+
